@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name=viewport" content="width=device-width, initial-scale=1" />
+        <title>Megan Pai</title>
+        <style>
+            @font-face {
+                font-family: "Sono";
+                src: url("fonts/Sono-Regular.ttf");
+            }
+            @font-face {
+                font-family: "Sono-Light";
+                src: url("fonts/Sono-Light.ttf");
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "Arial";
+                font-size: 11px;
+                display: flex;
+                margin: 0px;
+                width: 100%;
+                overflow-x: overlay;
+                align-items: start;
+            }
+            body::-webkit-scrollbar {
+                 height: 0px;
+                 display: none;
+            }
+            img {
+                width: 120px;
+                height: 100%;
+            }
+            #image-container {
+                width: 100vw;
+                display: flex;
+                margin-top: 10px;
+                margin-left: 70px;
+            }
+            img:hover {
+                width: 50vw;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            #title, #info, #refresh {
+                position: fixed;
+                margin-top: 10px;
+                align-content: center;
+                letter-spacing: 1px;
+                line-height: 21px;
+                color: dimgray;
+                padding: 0px;
+            }
+            #title {
+                margin-left: 10px;
+                width: 50px;
+                top: -5px;
+            }
+            #info {
+                margin-left: 70px;
+                bottom: -5px;
+            }
+            #refresh {
+                font-size: 13px;
+                margin-left: 10px;
+                bottom: 7px;
+            }
+            @media screen and (max-width: 1000px) {
+                #image-container {
+                    flex-flow: column;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-top: 62px;
+                }
+                img, img:hover {
+                    width: 100%;
+                }
+                #info {
+                }
+            }
+        </style>
+        <!-- <script>
+            var e = document.createElement("base");
+            e.target = "_blank";
+            document.head.appendChild(e); 
+        </script> -->
+    </head>
+    <body>
+        <p id="title">Megan<br>Pai</p>
+        <p id="info">
+            For a full portfolio and CV, please reach out at <a target="_blank" href="mailto:dear.meganpai@gmail.com">dear.meganpai@gmail.com.</a>
+            Currently at <a target="_blank" href="http://www.mgmtdesign.com/">MGMT. design</a> and <a target="_blank" href="https://www.printedmatter.org/">Printed Matter</a>.
+        </p>
+        <a id="refresh" href="index.html">↻</a>
+        <!-- <p id="info">Bk,<br>Ny</p> -->
+        <div id="image-container"></div>
+        <script>
+        const images = [
+            "images/21_capsule/capsule_01_brighter.jpg",
+            "images/21_capsule/capsule_03_brighter.jpg",
+            "images/21_capsule/capsule_05_brighter.jpg",
+            "images/21_capsule/capsule_07_brighter.jpg",
+            "images/21_capsule/capsule_08_brighter.jpg",
+
+            "images/22_capsule-exhibition/capsule_exhibition_01.png",
+            "images/22_capsule-exhibition/capsule_exhibition_02.png",
+            "images/22_capsule-exhibition/capsule_exhibition_04.png",
+            "images/22_capsule-exhibition/capsule_exhibition_06.png",
+            "images/22_capsule-exhibition/capsule_exhibition_07.png",
+
+            "images/22_princeton-visual-arts-book/vis-book_01.jpg",
+            "images/22_princeton-visual-arts-book/vis-book_02.jpg",
+            "images/22_princeton-visual-arts-book/vis-book_03.jpg",
+            "images/22_princeton-visual-arts-book/vis-book_04.jpg",
+            "images/22_princeton-visual-arts-book/vis-book_06.jpg",
+            "images/22_princeton-visual-arts-book/vis-book_07.jpg",
+            "images/22_princeton-visual-arts-book/spread_1.png",
+            "images/22_princeton-visual-arts-book/spread_2.png",
+            "images/22_princeton-visual-arts-book/spread_3.png",
+
+            "images/22 signatures/muscle-memory_01.jpg",
+            "images/22 signatures/muscle-memory_04.jpg",
+            "images/22 signatures/muscle-memory_05.jpg",
+            "images/22 signatures/muscle-memory_06.png",
+            "images/22 signatures/signatures_01.jpg",
+            "images/22 signatures/signatures_06.jpg",
+            "images/22 signatures/signatures_07.jpg",
+            "images/22 signatures/signatures_09.jpg",
+            "images/22 signatures/signatures-on-film_01.jpg",
+            "images/22 signatures/signatures-on-film_07.jpg",
+            "images/22 signatures/signatures-on-film_08.jpg",
+            "images/22 signatures/signatures-on-film_09.jpg",
+
+            "images/23_a-catalog-of-simple-pleasures/box_larger_vertical.svg",
+            "images/23_a-catalog-of-simple-pleasures/original_099bad9afd0e8fef204f27a92ccd89c5.jpg",
+            "images/23_a-catalog-of-simple-pleasures/original_7440bf877a3a35b37788e8db3116ed7a.jpg",
+            "images/23_a-catalog-of-simple-pleasures/original_a5c72666fba476fb961178c76ebdc896.jpg",
+            "images/23_a-catalog-of-simple-pleasures/original_195ffaf6d13127e066a2ee0d5a48acac.jpg",
+            "images/23_a-catalog-of-simple-pleasures/original_fa17fcbdc8ad5263fe7a39740b766101.jpg",
+            "images/23_a-catalog-of-simple-pleasures/metacards_gray_1.png",
+            "images/23_a-catalog-of-simple-pleasures/metacards_gray_2.png",
+            "images/23_a-catalog-of-simple-pleasures/metacards_gray_3.png",
+            "images/23_a-catalog-of-simple-pleasures/title_card.png",
+
+            "images/23_loom/Loom_Track_Art_Final_edit_01.png",  
+            "images/23_loom/Loom_Track_Art_Final_edit_02.png",  
+            "images/23_loom/Loom_Track_Art_Final_edit_03.png",  
+            "images/23_loom/Loom_Track_Art_Final_edit_04.png",  
+            "images/23_loom/Loom_Track_Art_Final_edit_05.png",  
+            "images/23_loom/Loom_Track_Art_Final_edit_06.png",     
+            
+            "images/23_printed-matter/holiday_graphic_personal.gif",
+            "images/23_printed-matter/frieze.gif",
+            "images/23_printed-matter/frieze_signing_1.png",
+            "images/23_printed-matter/frieze_signing_2.png",
+            "images/23_printed-matter/frieze_signing_3.png",
+            "images/23_printed-matter/0707_LAABF_Food_Drink_Map_FINAL.png",
+
+            "images/23_verascope/cover_1.png",
+            "images/23_verascope/cover_2.png",
+            "images/23_verascope/cover_3.png",
+            "images/23_verascope/b.jpg",
+            "images/23_verascope/b2.jpg",
+
+            "images/23_asterisk/02.png",
+
+            "images/23_bmnsm/gala.png",
+
+            "images/23_unnamed-figures/sections.png",
+        ];
+
+        function shuffle(array) {
+            array.sort(() => Math.random() - 0.5);
+        }
+
+        shuffle(images);
+
+        const container = document.getElementById("image-container");
+
+        for (let i = 0; i < images.length; i++) {
+            const img = document.createElement("img");
+            img.src = images[i];
+            container.appendChild(img);
+        }
+        </script>
+    </body>
+</html>

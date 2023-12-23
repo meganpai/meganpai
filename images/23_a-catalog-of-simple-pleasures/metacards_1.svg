@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 405 272">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        font-family: ArialMT, Arial;
+        font-size: 8px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <rect class="cls-2" x="15" y="1" width="180" height="252" rx="14.99" ry="14.99"/>
+      <rect class="cls-5" x="15" y="1" width="180" height="252" rx="14.99" ry="14.99"/>
+    </g>
+    <g>
+      <rect class="cls-2" x="210" y="19" width="180" height="252" rx="14.99" ry="14.99"/>
+      <rect class="cls-5" x="210" y="19" width="180" height="252" rx="14.99" ry="14.99"/>
+    </g>
+  </g>
+  <text class="cls-1" transform="translate(46.52 129.91)"><tspan class="cls-4" x="0" y="0">A</tspan><tspan x="4.9" y="0" xml:space="preserve"> Catalogue of Simple Pleasures</tspan></text>
+  <text class="cls-1" transform="translate(85.87 225.4)"><tspan x="0" y="0">Alex Singh</tspan></text>
+  <text class="cls-1" transform="translate(85.21 235)"><tspan x="0" y="0">with</tspan><tspan class="cls-3" x="14.23" y="0"> </tspan><tspan x="16.02" y="0">Are.na</tspan></text>
+</svg>
