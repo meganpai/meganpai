@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name=viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
         <title>Megan Pai</title>
         <style>
             @font-face {
@@ -51,7 +52,7 @@
                 margin-top: 10px;
                 align-content: center;
                 letter-spacing: 1px;
-                line-height: 21px;
+                line-height: 18px;
                 color: dimgray;
                 padding: 0px;
             }
@@ -69,17 +70,30 @@
                 margin-left: 10px;
                 bottom: 7px;
             }
-            @media screen and (max-width: 1000px) {
+            @media screen and (max-width: 980px) {
+                body {
+                   font-size: 15px; 
+                }
                 #image-container {
                     flex-flow: column;
-                    margin-left: 10px;
-                    margin-right: 10px;
-                    margin-top: 62px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    margin-top: 157px;
                 }
                 img, img:hover {
                     width: 100%;
                 }
+                #title, #info {
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    line-height: 21px;
+                }
                 #info {
+                    top: 50px;
+                }
+                #refresh {
+                    display: none;
                 }
             }
         </style>
@@ -96,7 +110,6 @@
             Currently at <a target="_blank" href="http://www.mgmtdesign.com/">MGMT. design</a> and <a target="_blank" href="https://www.printedmatter.org/">Printed Matter</a>.
         </p>
         <a id="refresh" href="index.html">↻</a>
-        <!-- <p id="info">Bk,<br>Ny</p> -->
         <div id="image-container"></div>
         <script>
         const images = [
@@ -122,18 +135,21 @@
             "images/22_princeton-visual-arts-book/spread_2.png",
             "images/22_princeton-visual-arts-book/spread_3.png",
 
-            "images/22 signatures/muscle-memory_01.jpg",
-            "images/22 signatures/muscle-memory_04.jpg",
-            "images/22 signatures/muscle-memory_05.jpg",
-            "images/22 signatures/muscle-memory_06.png",
-            "images/22 signatures/signatures_01.jpg",
-            "images/22 signatures/signatures_06.jpg",
-            "images/22 signatures/signatures_07.jpg",
-            "images/22 signatures/signatures_09.jpg",
-            "images/22 signatures/signatures-on-film_01.jpg",
-            "images/22 signatures/signatures-on-film_07.jpg",
-            "images/22 signatures/signatures-on-film_08.jpg",
-            "images/22 signatures/signatures-on-film_09.jpg",
+            "images/22_signatures/muscle-memory_01.jpg",
+            "images/22_signatures/muscle-memory_04.jpg",
+            "images/22_signatures/muscle-memory_05.jpg",
+            "images/22_signatures/muscle-memory_06.png",
+            "images/22_signatures/signatures_01.jpg",
+            "images/22_signatures/signatures_06.jpg",
+            "images/22_signatures/signatures_07.jpg",
+            "images/22_signatures/signatures_09.jpg",
+            "images/22_signatures/signatures-on-film_01.jpg",
+            "images/22_signatures/signatures-on-film_07.jpg",
+            "images/22_signatures/signatures-on-film_08.jpg",
+            "images/22_signatures/signatures-on-film_09.jpg",
+            // "images/22_signatures/book_1.png",
+            // "images/22_signatures/book_2.png",
+            // "images/22_signatures/book_3.png",
 
             "images/23_a-catalog-of-simple-pleasures/box_larger_vertical.svg",
             "images/23_a-catalog-of-simple-pleasures/original_099bad9afd0e8fef204f27a92ccd89c5.jpg",
@@ -158,13 +174,21 @@
             "images/23_printed-matter/frieze_signing_1.png",
             "images/23_printed-matter/frieze_signing_2.png",
             "images/23_printed-matter/frieze_signing_3.png",
-            "images/23_printed-matter/0707_LAABF_Food_Drink_Map_FINAL.png",
+            "images/23_printed-matter/map.png",
 
-            "images/23_verascope/cover_1.png",
+            "images/23_901-cherry/wallpaper_1.png",
+            "images/23_901-cherry/wallpaper_2.png",
+            "images/23_901-cherry/wallpaper_3.png",
+
             "images/23_verascope/cover_2.png",
             "images/23_verascope/cover_3.png",
-            "images/23_verascope/b.jpg",
-            "images/23_verascope/b2.jpg",
+            "images/23_verascope/cover_4.png",
+            "images/23_verascope/bookmark_gray_2.png",
+            "images/23_verascope/text_2.png",
+
+            "images/23_knoll/interviews_1.png",
+            "images/23_knoll/interviews_2.png",
+            "images/23_knoll/interviews_3.png",
 
             "images/23_asterisk/02.png",
 
