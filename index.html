@@ -19,7 +19,6 @@
             }
             body {
                 font-family: "Arial";
-                font-size: 11px;
                 display: flex;
                 margin: 0px;
                 width: 100%;
@@ -31,17 +30,20 @@
                  display: none;
             }
             img {
-                width: 120px;
+                width: 140px;
                 height: 100%;
             }
             #image-container {
                 width: 100vw;
                 display: flex;
                 margin-top: 10px;
-                margin-left: 70px;
+                margin-left: 100px;
             }
             img:hover {
                 width: 50vw;
+            }
+            p {
+                font-size: 14px;
             }
             a {
                 text-decoration: none;
@@ -49,42 +51,35 @@
             }
             #title, #info, #refresh {
                 position: fixed;
-                margin-top: 10px;
                 align-content: center;
-                letter-spacing: 1px;
-                line-height: 18px;
+                letter-spacing: .5px;
+                line-height: 19px;
                 color: dimgray;
                 padding: 0px;
             }
             #title {
                 margin-left: 10px;
                 width: 50px;
-                top: -5px;
             }
             #info {
                 margin-left: 70px;
                 bottom: -5px;
             }
             #refresh {
-                font-size: 13px;
                 margin-left: 10px;
-                bottom: 7px;
+                bottom: 10px;
             }
             @media screen and (max-width: 980px) {
                 #image-container {
                     flex-flow: column;
                     margin-left: 20px;
                     margin-right: 20px;
-                    margin-top: 157px;
-                }
-                body {
-                    font-size: 15px; 
+                    margin-top: 113px;
                 }
                 img, img:hover {
                     width: 100%;
                 }
                 #title, #info {
-                    margin-top: 20px;
                     margin-left: 20px;
                     margin-right: 20px;
                     line-height: 21px;
