@@ -80,6 +80,9 @@
                 img {
                     width: 60vh;
                 }
+                .larger {
+                    width: 80vh;
+                }
             }
             .title {
                 display: flex;
@@ -94,9 +97,6 @@
             .project-info-2 {
                 opacity: 40%; 
             }
-            .larger:hover {
-                width: 100vh;
-            }
             @media only screen and (max-height: 450px) {
                 .bottom {
                     display: none;
@@ -104,18 +104,19 @@
             } 
             @media only screen and (max-width: 600px) {
                 body {
-                    font-size: 16px;
                 }
                 .frame {
                     padding: 0px;
                     gap: 2.5em;
                 }
+                /*
                 .info {
                     gap: .75em;
                 }
                 .top {
                     gap: 2.25em;
                 }
+                */
                 .top, .bottom {
                     padding: 15px;
                 }
@@ -132,7 +133,7 @@
             <p class="title">Megan Pai</p>
         <div class="info">
             <p>Currently at <span class=space>&nbsp;</span><a target="_blank" href="http://www.mgmtdesign.com/">MGMT. design</a><span class="space">&nbsp;</span>and<span class="space">&nbsp;</span><a target="_blank" href="https://www.linkedbyair.net/"> Linked by Air</a>.</p>
-            <p>For a full portfolio, please email <span class="space">&nbsp;</span><a href="mailto:someone@example.com">dear.meganpai@gmail.com</a>.</p>
+            <p>For a full portfolio, please email <span class="space">&nbsp;</span><a href="mailto:dear.meganpai@gmail.com">dear.meganpai@gmail.com</a>.</p>
         </div>
         </div>
 
@@ -140,20 +141,41 @@
 
             <!--infographics-->
             
+
+            <!--Princeton Visual Arts Book-->
+            <div class="work">
+                <img loading="lazy" class="larger" src="images/22_Princeton_Visual_Arts/vis-book_02.jpg">
+                <p class="project-info">Princeton University Visual Arts 2022</p>
+                <p class="project-info-2">Vellum, coil-bound, self cover, 114 pages, 6 x 9''</p>
+            </div>
+            <div class="work">
+                <img loading="lazy" src="images/22_Princeton_Visual_Arts/vis-book_03.jpg">
+            </div>
+            <div class="work">
+                <img loading="lazy" src="images/22_Princeton_Visual_Arts/vis-book_04.jpg">
+            </div>
+            <div class="work">
+                <img loading="lazy" class="larger" src="images/22_Princeton_Visual_Arts/vis-book_05.jpg">
+            </div>
+            <div class="work">
+                <img loading="lazy" src="images/22_Princeton_Visual_Arts/vis-book_06.jpg">
+            </div>
+            <div class="work">
+                <img loading="lazy" class="larger" src="images/22_Princeton_Visual_Arts/vis-book_07.jpg">
+            </div>
+            <div class="work">
+                <img loading="lazy" class="larger" src="images/22_Princeton_Visual_Arts/vis-book_01.jpg">
+            </div>
+
+
             <!--Signatures-->
             <div class="work">
                 <img loading="lazy" src="images/22_Signatures/muscle-memory_01.jpg">
                 <p class="project-info">Signatures</p>
-                <p class="project-info-2">Handbound books,</p>
+                <p class="project-info-2">Handbound books, letterpressed program, video, audio</p>
             </div>
             <div class="work">
                 <img loading="lazy" src="images/22_Signatures/muscle-memory_04.jpg">
-            </div>
-            <div class="work">
-                <img loading="lazy" src="images/22_Signatures/muscle-memory_05.jpg">
-            </div>
-            <div class="work">
-                <img loading="lazy" src="images/22_Signatures/muscle-memory_06.png">
             </div>
             
 
@@ -161,7 +183,7 @@
             <div class="work">
                 <img loading="lazy" src="images/21_Capsule/capsule_01_brighter.jpg">
                 <p class="project-info">Capsule</p>
-                <p class="project-info-2">Handbound book</p>
+                <p class="project-info-2">Edition of 100 handbound books</p>
             </div>
             <div class="work">
                 <img loading="lazy" src="images/21_Capsule/capsule_03_brighter.jpg">
@@ -178,12 +200,23 @@
             <div class="work">
                 <img loading="lazy" src="images/21_Capsule/capsule_08_brighter.jpg">
             </div>
+            <div class="work">
+                <img loading="lazy" class="larger" src="images/21_Capsule/22_Capsule_Exhibition/capsule_exhibition_07.png">
+                <p class="project-info">Capsule exhibition</p>
+                <p class="project-info-2">An extension of the publication</p>
+            </div>
+            <div class="work">
+                <img loading="lazy" src="images/21_Capsule/22_Capsule_Exhibition/capsule_exhibition_06.png">
+            </div>
+            <div class="work">
+                <img loading="lazy" src="images/21_Capsule/22_Capsule_Exhibition/capsule_exhibition_04.png">
+            </div>
 
             <!--MGMT-->
             <div class="work">
                 <img loading="lazy" src="images/23_MGMT/gala_1.png">
-                <p class="project-info">National Shell Museum</p>
-                <p class="project-info-2">Postcard invite</p>
+                <p class="project-info">Bailey-Matthews National Shell Museum and Aquarium</p>
+                <p class="project-info-2">Postcard</p>
             </div>
             <div class="work">
                 <img loading="lazy" src="images/24_MGMT/apple.gif">
@@ -249,16 +282,13 @@
                 <img loading="lazy" src="images/23_Printed_Matter/0707_LAABF_Food_Drink_Map_FINAL.png">
             </div>
             <div class="work">
-                <img loading="lazy" src="images/23_Printed_Matter/holiday_graphic_personal.gif">
-            </div>
-            <div class="work">
                 <img loading="lazy" src="images/23_Printed_Matter/sign_1.png">
             </div>
             <div class="work">
                 <img loading="lazy" style="margin-left:-30px;" src="images/23_Printed_Matter/sign_2.png">
             </div>
             <div class="work">
-                <img loading="lazy" src="images/23_Printed_Matter/frieze_signing_collection.png">
+                <img loading="lazy" class="larger" src="images/23_Printed_Matter/frieze_signing_collection.png">
             </div>
 
             <!--A Catalogue of Simple Pleasures-->
@@ -271,10 +301,10 @@
                 <img loading="lazy" class="larger" src="images/23_A_Catalogue_of_Simple_Pleasures/box_black.png">
             </div>
             <div class="work">
-                <img loading="lazy" src="images/23_A_Catalogue_of_Simple_Pleasures/metacards_2.svg">
+                <img loading="lazy" class="larger" src="images/23_A_Catalogue_of_Simple_Pleasures/metacards_2.svg">
             </div>
             <div class="work">
-                <img loading="lazy" src="images/23_A_Catalogue_of_Simple_Pleasures/metacards_3.svg">
+                <img loading="lazy" class="larger" src="images/23_A_Catalogue_of_Simple_Pleasures/metacards_3.svg">
             </div>
             <div class="work">
                 <img loading="lazy" src="images/23_A_Catalogue_of_Simple_Pleasures/photo_1.jpg">
@@ -306,8 +336,9 @@
             </div>
 
             <!--Verascope-->
+            <!--
             <div class="work">
-                <img loading="lazy" src="images/test/verascope_1.png">
+                <img loading="lazy" class="larger" src="images/test/verascope_1.png">
                 <p class="project-info">Learning to Navigate the Game of Life</p>
                 <p class="project-info-2">by Afika Nyati</p>
             </div>
@@ -320,6 +351,7 @@
             <div class="work">
                 <img loading="lazy" src="images/test/verascope_4.png">
             </div>
+            -->
             
         </div>
 
