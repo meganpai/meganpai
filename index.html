@@ -4,149 +4,33 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+        <link rel="stylesheet" href="style.css">
         <title>Megan Pai</title>
-        <style>
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 14px;
-                letter-spacing: .03rem;
-                line-height: 1.5em;
-                margin: 0px;
-                background-color: #eefde4;
-            }
-            p {
-                display: flex;
-                flex-direction: row;
-                flex: 1;
-                flex-wrap: wrap;
-                margin: 0px;
-                padding: 0px;
-            }
-            a, a:visited {
-                text-decoration: none;
-                color: black;
-                opacity: 40%;
-                cursor: alias;
-                flex-direction: row;
-            }
-            a:hover {
-                opacity: 100%;
-            }
-            img {
-                width: 22vh;
-                padding-right: 15px;
-                padding-bottom: 10px;
-            }
-            * {
-                box-sizing: border-box;
-            }
-            .frame {
-                /*background-image: url('images/23_verascope/cover_4.png');*/
-                background-size: cover;
-                background-position: 0px;
-
-                padding: 15px;
-                display: flex;
-                min-height: 100dvh;
-                flex-direction: column;
-
-                overflow-x: scroll;
-            }
-            .frame::-webkit-scrollbar {
-                    display: none;
-                }
-            .top {
-                display: flex;
-                flex-direction: column;
-                flex: 1;
-                flex-wrap: wrap;
-                width: 100%;
-                align-items: flex-start;
-                gap: 2em;
-                position: fixed;
-            }
-            .bottom {
-                display: flex;
-                flex: 1;
-                align-items: flex-end;
-            }
-            .work {
-                display: flex;
-                flex-direction: column;
-            }
-            .work:hover {
-                p {
-                }
-                img {
-                    width: 60vh;
-                }
-                .larger {
-                    width: 80vh;
-                }
-            }
-            .title {
-                display: flex;
-            }
-            .info {
-                display: flex;
-                flex-direction: column;
-            }
-            .project-info, .project-info-2 {
-                width: 90%;
-            }
-            .project-info-2 {
-                opacity: 40%; 
-            }
-            @media only screen and (max-height: 450px) {
-                .bottom {
-                    display: none;
-                }
-            } 
-            @media only screen and (max-width: 600px) {
-                body {
-                }
-                .frame {
-                    padding: 0px;
-                    gap: 2.5em;
-                }
-                /*
-                .info {
-                    gap: .75em;
-                }
-                .top {
-                    gap: 2.25em;
-                }
-                */
-                .top, .bottom {
-                    padding: 15px;
-                }
-                img {
-                    padding-right: 20px;
-                    width: 35vh;
-                }
-            }
-        </style>
     </head>
     <body>
-    <div class="frame">
+    <div class="frame-home">
         <div class="top">
-            <p class="title">Megan Pai</p>
-        <div class="info">
-            <p>Currently at <span class=space>&nbsp;</span><a target="_blank" href="http://www.mgmtdesign.com/">MGMT. design</a><span class="space">&nbsp;</span>and<span class="space">&nbsp;</span><a target="_blank" href="https://www.linkedbyair.net/"> Linked by Air</a>.</p>
-            <p>For a full portfolio, please email <span class="space">&nbsp;</span><a href="mailto:dear.meganpai@gmail.com">dear.meganpai@gmail.com</a>.</p>
+            <p>Megan Pai</p>
+        <div class="bio">
+            <p>
+                Currently at
+                <a target="_blank" href="http://www.mgmtdesign.com/">MGMT. design</a>
+                and
+                <a target="_blank" href="https://www.linkedbyair.net/">Linked by Air</a>.
+            </p>
+            <p>
+                For a full portfolio, please email
+                <a href="mailto:dear.meganpai@gmail.com">dear.meganpai@gmail.com</a>
+                .
+            </p>
         </div>
         </div>
-
-        <div class="bottom" id="to-shuffle">
-
-            <!--infographics-->
-            
-
+        <div class="bottom" id="to-shuffle">            
             <!--Princeton Visual Arts Book-->
             <div class="work">
-                <img loading="lazy" class="larger" src="images/22_Princeton_Visual_Arts/vis-book_02.jpg">
-                <p class="project-info">Princeton University Visual Arts 2022</p>
-                <p class="project-info-2">Vellum, coil-bound, self cover, 114 pages, 6 x 9''</p>
+                <a class="image-link" href="projects/Princeton_Visual_Arts_2022.html"><img loading="lazy" class="larger" src="images/22_Princeton_Visual_Arts/vis-book_02.jpg"></a>
+                <p class="info-a">Princeton University Visual Arts 2022</p>
+                <p class="info-b">Book</p>
             </div>
             <div class="work">
                 <img loading="lazy" src="images/22_Princeton_Visual_Arts/vis-book_03.jpg">
@@ -167,23 +51,21 @@
                 <img loading="lazy" class="larger" src="images/22_Princeton_Visual_Arts/vis-book_01.jpg">
             </div>
 
-
-            <!--Signatures-->
+            <!--Signatures, Handbound books, letterpressed program, video, audio-->
             <div class="work">
                 <img loading="lazy" src="images/22_Signatures/muscle-memory_01.jpg">
-                <p class="project-info">Signatures</p>
-                <p class="project-info-2">Handbound books, letterpressed program, video, audio</p>
+                <p class="info-a">Signatures</p>
+                <p class="info-b">Exhibition</p>
             </div>
             <div class="work">
                 <img loading="lazy" src="images/22_Signatures/muscle-memory_04.jpg">
             </div>
             
-
             <!--Capsule-->
             <div class="work">
                 <img loading="lazy" src="images/21_Capsule/capsule_01_brighter.jpg">
-                <p class="project-info">Capsule</p>
-                <p class="project-info-2">Edition of 100 handbound books</p>
+                <p class="info-a">Capsule</p>
+                <p class="info-b">Book</p>
             </div>
             <div class="work">
                 <img loading="lazy" src="images/21_Capsule/capsule_03_brighter.jpg">
@@ -202,8 +84,8 @@
             </div>
             <div class="work">
                 <img loading="lazy" class="larger" src="images/21_Capsule/22_Capsule_Exhibition/capsule_exhibition_07.png">
-                <p class="project-info">Capsule exhibition</p>
-                <p class="project-info-2">An extension of the publication</p>
+                <p class="info-a">Capsule exhibition</p>
+                <p class="info-b">An extension of the publication</p>
             </div>
             <div class="work">
                 <img loading="lazy" src="images/21_Capsule/22_Capsule_Exhibition/capsule_exhibition_06.png">
@@ -215,13 +97,13 @@
             <!--MGMT-->
             <div class="work">
                 <img loading="lazy" src="images/23_MGMT/gala_1.png">
-                <p class="project-info">Bailey-Matthews National Shell Museum and Aquarium</p>
-                <p class="project-info-2">Postcard</p>
+                <p class="info-a">Bailey-Matthews National Shell Museum and Aquarium</p>
+                <p class="info-b">Postcard</p>
             </div>
             <div class="work">
                 <img loading="lazy" src="images/24_MGMT/apple.gif">
-                <p class="project-info">MGMT. design</p>
-                <p class="project-info-2">Icons</p>
+                <p class="info-a">MGMT. design</p>
+                <p class="info-b">Icons</p>
             </div>
             <div class="work">
                 <img loading="lazy" src="images/24_MGMT/clap.gif">
@@ -231,8 +113,8 @@
             </div>
             <div class="work">
                 <img loading="lazy" src="images/24_MGMT/infographics/asterisk_06_water.png">
-                <p class="project-info">Asterisk Magazine</p>
-                <p class="project-info-2">Infographic</p>
+                <p class="info-a">Asterisk Magazine</p>
+                <p class="info-b">Infographic</p>
             </div>
             <div class="work">
                 <img loading="lazy" class="larger" src="images/24_MGMT/infographics/asterisk_05_population.png">
@@ -244,9 +126,9 @@
                 <img loading="lazy" src="images/24_MGMT/infographics/asterisk_05_population_3.png">
             </div>
             <div class="work">
-                <img loading="lazy" src="images/23_MGMT/uf_1.png">
-                <p class="project-info">Unnamed Figures</p>
-                <p class="project-info-2">Publication for the American Folk Art Museum</p>
+                <a class="image-link" href="projects/Unnamed_Figures.html"><img loading="lazy" src="images/23_MGMT/uf_1.png"></a>
+                <p class="info-a">Unnamed Figures</p>
+                <p class="info-b">Publication</p>
             </div>
             <div class="work">
                 <img loading="lazy" class="larger" src="images/23_MGMT/uf_2.png">
@@ -263,10 +145,11 @@
             <div class="work">
                 <img loading="lazy" class="larger" src="images/23_MGMT/uf_6.png">
             </div>
+            <!-- for an independent creative consultancy -->
             <div class="work">
                 <img loading="lazy" src="images/23_MGMT/s_and_f_newsletter.png">
-                <p class="project-info">Stauss & Fussell</p>
-                <p class="project-info-2">Identity for an independent creative consultancy</p>
+                <p class="info-a">Stauss & Fussell</p>
+                <p class="info-b">Identity</p>
             </div>
             <div class="work">
                 <img loading="lazy" src="images/23_MGMT/s_and_f_business_cards.png">
@@ -275,8 +158,8 @@
             <!--Printed Matter-->
             <div class="work">
                 <img loading="lazy" src="images/23_Printed_Matter/frieze.gif">
-                <p class="project-info">Printed Matter, Inc.</p>
-                <p class="project-info-2">Digital signage at Frieze New York</p>
+                <p class="info-a">Printed Matter, Inc.</p>
+                <p class="info-b">Frieze New York</p>
             </div>
             <div class="work">
                 <img loading="lazy" src="images/23_Printed_Matter/0707_LAABF_Food_Drink_Map_FINAL.png">
@@ -293,9 +176,9 @@
 
             <!--A Catalogue of Simple Pleasures-->
             <div class="work">
-                <img loading="lazy" src="images/23_A_Catalogue_of_Simple_Pleasures/metacards_1.svg">
-                <p class="project-info">A Catalogue of Simple Pleasures</p>
-                <p class="project-info-2">Deck of cards</p>
+                <a class="image-link" href="projects/A_Catalogue_of_Simple_Pleasures.html"><img loading="lazy" src="images/23_A_Catalogue_of_Simple_Pleasures/metacards_1.svg"></a>
+                <p class="info-a">A Catalogue of Simple Pleasures</p>
+                <p class="info-b">Deck of cards</p>
             </div>
             <div class="work">
                 <img loading="lazy" class="larger" src="images/23_A_Catalogue_of_Simple_Pleasures/box_black.png">
@@ -316,8 +199,8 @@
             <!--Loom-->
             <div class="work">
                 <img loading="lazy" src="images/23_Loom/Loom_Track_Art_Final_edit_01.png">
-                <p class="project-info">Loom</p>
-                <p class="project-info-2">Album by Jeff Snyder</p>
+                <p class="info-a">Loom</p>
+                <p class="info-b">Album design</p>
             </div>
             <div class="work">
                 <img loading="lazy" src="images/23_Loom/Loom_Track_Art_Final_edit_02.png">
@@ -336,23 +219,11 @@
             </div>
 
             <!--Verascope-->
-            <!--
             <div class="work">
-                <img loading="lazy" class="larger" src="images/test/verascope_1.png">
-                <p class="project-info">Learning to Navigate the Game of Life</p>
-                <p class="project-info-2">by Afika Nyati</p>
+                <img loading="lazy" src="images/23_Learning_to_Navigate_the_game_of_Life/cover_3.png">
+                <p class="info-a">Learning to Navigate the Game of Life</p>
+                <p class="info-b">Book</p>
             </div>
-            <div class="work">
-                <img loading="lazy" src="images/test/verascope_2.png">
-            </div>
-            <div class="work">
-                <img loading="lazy" src="images/test/verascope_3.png">
-            </div>
-            <div class="work">
-                <img loading="lazy" src="images/test/verascope_4.png">
-            </div>
-            -->
-            
         </div>
 
         <script>
@@ -370,26 +241,6 @@
               shuffleElements(container);
             });
           </script>
-
-        <!--
-        <script>
-            var myIndex = 0;
-            carousel();
-            
-            function carousel() {
-              var i;
-              var x = document.getElementsByClassName("work");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              myIndex++;
-              if (myIndex > x.length) {myIndex = 1}    
-              x[myIndex-1].style.display = "block";  
-              setTimeout(carousel, 2000); // Change image every 2 seconds
-            }
-            </script>
-            -->
-
     </div>
     </body>
 </html>
