@@ -84,7 +84,7 @@ img {
     }
 } 
 @media only screen and (max-width: 600px) {
-    .frame {
+    .frame-home, .frame-project {
         padding: 0px;
         gap: 2.5em;
     }
