@@ -72,7 +72,7 @@ img {
     width: 90%;
 }
 .info-d {
-    width: 60%;
+    width: 50%;
 }
 .info-b, .info-c {
     opacity: 40%; 
@@ -96,6 +96,10 @@ img {
         display: none;
     }
 } 
+@media only screen and (max-width: 1200px) {
+    .info-d {
+        width: 70%;
+    }
 @media only screen and (max-width: 600px) {
     .frame-home, .frame-project {
         padding: 0px;
